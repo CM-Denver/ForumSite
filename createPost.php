@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
     $content = $_POST['content'];
     $name = $_POST['name'];
 
-    //put form contents in a text file:
+    //put form contents in a text file, save text file as 'username title.txt':
     chdir("./posts");
     $newFile = "./$name $title.txt";
     $fileContent = "$title-split-$content-split-$name";

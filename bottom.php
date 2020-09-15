@@ -15,7 +15,7 @@
         width: 100%;
         background-color: black;
         display: grid;
-        grid-template-columns: 25% 50% 25%;
+        grid-template-columns: 100pt auto 100pt;
     }
     .menuImage
     {
@@ -67,6 +67,20 @@
         margin-top: 10pt;
         margin-bottom: 10pt;
         max-height: 60%;
+    }
+    .searchBar
+    {
+        height: 100%;
+        min-width: 50%;
+        background-color: rgb(32, 32, 32);
+        border: 0;
+    }
+    .button
+    {
+        height: 100%;
+        max-width: 100pt;
+        background-color: rgb(65, 65, 65);
+        border: 0;
     }
     </style>
     
