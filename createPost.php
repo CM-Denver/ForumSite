@@ -7,10 +7,13 @@ if(isset($_POST['submit'])){
     $content = $_POST['content'];
     $name = $_POST['name'];
 
+    //create a unique id for the post:
+    $id = rand(1000000000, 99999999999);
+
     //put form contents in a text file, save text file as 'username title.txt':
     chdir("./posts");
-    $newFile = "./$name $title.txt";
-    $fileContent = "$title-split-$content-split-$name";
+    $newFile = "./$id.txt";
+    $fileContent = "$title-split-$content-split-$name-split-$id";
     file_put_contents($newFile, $fileContent);
 }
 
